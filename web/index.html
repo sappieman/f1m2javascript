@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f1m2js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 id="titel">Museum online javascript</h1>
+    <p id="mkBlauw">maak achtergrond Blauw</p>
+
+    <script>
+        const titel = document.getElementById("titel");
+        const mkBlauw = document.getElementById('mkBlauw')
+
+        titel.style.backgroundColor = "red";
+
+        titel.addEventListener('click',voeruittitel)
+        mkBlauw.addEventListener('click',voeruitBlauw);
+
+        function voeruittitel(){
+            titel.style.backgroundColor = "yellow";
+            titel.style.color = "black";
+        }
+
+        function voeruitBlauw(){
+            document.body.style.backgroundColor = "Blue";
+            document.body.style.color = "white";
+            titel.style.backgroundColor = "white";
+            titel.style.color = "black";
+        }
+    </script>
+
+
+</body>
+</html>
